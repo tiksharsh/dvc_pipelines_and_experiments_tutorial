@@ -48,3 +48,23 @@ stages:
     - path: model.pkl
       md5: 54e1f8a4b5190206e94c9185af8c57c6
       size: 850894
+  evaluate:
+    cmd: python src/evaluate.py model.pkl data/features scores.json plots.json
+    deps:
+    - path: data/features
+      md5: 683147ce3d11b5b5457f7d78f86ee417.dir
+      size: 418297564
+      nfiles: 2
+    - path: model.pkl
+      md5: 54e1f8a4b5190206e94c9185af8c57c6
+      size: 850894
+    - path: src/evaluate.py
+      md5: c5ff8becf7425a7b7d0e2730cdc57a60
+      size: 1350
+    outs:
+    - path: plots.json
+      md5: 9c72e309bf2cf43f18d17643b5874352
+      size: 66415
+    - path: scores.json
+      md5: 2ee5d80878d105f40a88face91e2064b
+      size: 27
