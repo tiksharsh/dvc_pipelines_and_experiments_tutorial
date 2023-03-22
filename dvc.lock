@@ -1,0 +1,18 @@
+schema: '2.0'
+stages:
+  prepare:
+    cmd: python src/prepare.py
+    deps:
+    - path: src/prepare.py
+      md5: 8bb700480c47eef497a6e693bdd102ab
+      size: 980
+    params:
+      params.yaml:
+        prepare.categories:
+        - comp.graphics
+        - sci.space
+    outs:
+    - path: data/prepared
+      md5: 3a909cff29bc5982f1a7cedfbae14d58.dir
+      size: 3720018
+      nfiles: 2
