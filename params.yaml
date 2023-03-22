@@ -3,4 +3,4 @@ prepare:
         - comp.graphics
         - rec.sport.baseball # it was 'sci.space'
 train:
-    alpha: 0.1
+    alpha: 0.9
