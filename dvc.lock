@@ -16,3 +16,18 @@ stages:
       md5: 3a909cff29bc5982f1a7cedfbae14d58.dir
       size: 3720018
       nfiles: 2
+  featurize:
+    cmd: python src/featurize.py data/prepared data/features
+    deps:
+    - path: data/prepared
+      md5: 3a909cff29bc5982f1a7cedfbae14d58.dir
+      size: 3720018
+      nfiles: 2
+    - path: src/featurize.py
+      md5: f9a567e8ed4b6649534fb1d0f29163b4
+      size: 1686
+    outs:
+    - path: data/features
+      md5: bd8f83cc81185bd256ce1aee3d27456c.dir
+      size: 481545670
+      nfiles: 2
