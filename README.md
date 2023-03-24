@@ -65,7 +65,7 @@ prepare:
         - comp.graphics
         - rec.sport.baseball
 train:
-    alpha: 0.9
+    alpha: 0.8
 ```
 
 ## 6 - Run the pipeline
